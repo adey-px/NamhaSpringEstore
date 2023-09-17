@@ -1,4 +1,4 @@
-### Namha Servlet eStore
+### Namha Spring eStore
 An enterprise application for e-commerce website built with Java and related technologies
 
 ### Project Architecture
