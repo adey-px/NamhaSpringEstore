@@ -1,24 +1,20 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org"
+  xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}">
-    <script type="text/javascript" th:src="@{/webjars/jquery/jquery.min.js}"></script>
-    <script type="text/javascript" th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
-    <title>Estore Admin Dashboard</title>
-  </head>
+  <head th:replace="fragments :: page_head('Home - Shopme Admin', 'none')" />
 
   <body>
     <div class="container-fluid">
+      <div th:replace="main-navbar :: menu"></div>
       <div>
-        <h1 class="text-center">Welcome to Estore Admin Dashboard</h1>
+        <h2 class="text-center mt-5">Estore Admin Dashboard</h2>
+        Welcome <a th:href="@{/account}"
+          sec:authentication="principal.fullname"></a> <span
+          sec:authentication="principal.authorities"></span>
       </div>
-    </div>
 
-    <div class="text-center">
-      <p>&copy; Copyright 2023 | Namha Spring Estore</p>
+      <div th:replace="fragments :: footer"></div>
     </div>
   </body>
 
