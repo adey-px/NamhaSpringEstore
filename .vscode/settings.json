@@ -2,5 +2,6 @@
   "java.configuration.updateBuildConfiguration": "automatic",
   "java.project.sourcePaths": [
     "src"
-  ]
+  ],
+  "maven.view": "flat"
 }

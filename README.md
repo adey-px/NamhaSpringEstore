@@ -17,9 +17,11 @@ An enterprise application for e-commerce website built with Java and related tec
 ### Technology Stack
 - Core Java SE
 - Spring MVC
-- Spring Data JPA
-- Hibernate framework
+- MySql database
 - JDBC Driver
-- HTML
+- Hibernate framework
+- Spring Data JPA
+- HTML 
 - Thymeleaf
+- Bootstrap
 - Git & GitHub
