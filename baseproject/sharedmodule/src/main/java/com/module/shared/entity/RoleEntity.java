@@ -23,7 +23,22 @@ public class RoleEntity {
   @Column(length = 150, nullable = false)
   private String description;
 
-  // Getter and Setter methods
+  // Constructors, create parameters for RoleEntity object
+  // Pass args for the params when creating object instances
+  // empty one is required by hibernate
+  public RoleEntity() {
+  }
+
+  public RoleEntity(String name) {
+    this.name = name;
+  }
+
+  public RoleEntity(String name, String description) {
+    this.name = name;
+    this.description = description;
+  }
+
+  // Getter & Setter methods, accessible by object instances
   public Integer getId() {
     return id;
   }
